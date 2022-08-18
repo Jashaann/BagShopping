@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>e-Zone</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .header 
+        {
+            background-image: url("backgroundhome.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 ;
+            padding: 0;
+            height: 800px;
+            text-transform: uppercase ;
+        }
+        .menu
+        {
+            background-color: whitesmoke;
+            opacity: 70%;
+            width: auto;
+            font-size: 15px;
+            text-align: right;
+            margin-top: -15px;
+        }
+        .menu ul li
+        {
+            font-size: 15px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .menu ul li select
+        {
+            background: transparent;
+            border: none;
+            color: black;
+            font-size: 14px;
+            text-transform: uppercase ;
+        }
+        .menu ul li a
+        {
+            text-decoration: none;
+            color:black;
+        }
+        .menu ul li select:hover
+        {
+            text-decoration:3px underline red;
+        }
+        .menu ul li a:hover
+        {
+            text-decoration:3px underline red;
+        }
+        .header pre
+        {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 200px;
+            margin-right: 150px;
+        }
+        .slogan h4
+        {
+            font-size: 50px;
+            text-align: center;
+            margin-top: 350px;
+        }
+        .slogan p
+        {
+            color:black;
+            font-weight: 300px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: -20px;
+            font-family:'Courier New', Courier, monospace;
+            text-transform: capitalize;
+        }
+        .slogan h4::after
+        {
+            content:'';
+            background: red;
+            display: block;
+            width: 0%;
+            height: 3px;
+            margin: auto;
+            transition: 0.5s;
+        }
+        .slogan h4:hover::after
+        {
+            width: 15%;
+        }
+        .footer
+        {
+            bottom: 0;
+            opacity: 80%;
+            background-color: black;
+            text-align: center;
+        }
+        .fa
+        {
+            padding: 7px;
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 30px;
+            width: 25px;
+            
+        }
+        .fa:hover
+        {
+            opacity: 0.7;
+        }
+        .fa-facebook
+        {
+            background: blue;
+            color: white;
+            border-radius: 40%;
+        }
+        .fa-instagram
+        {border-radius: 40%;
+            background: red;
+            color: white;
+        }
+        .fa-google
+        {border-radius: 40%;
+            background: white;
+            color: black;
+        }
+        .footer p
+        {
+            color: white;
+            font-size: 20x;
+        }
+        .brands img
+        {
+            display: inline-block;
+            justify-content: space-between;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="signup.html" target="_blank">SignUp</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><select name="brands">
+                    <a href="" target="_blank"><option value="apple">Apple</option></a>
+                    <a href="" target="_blank"><option value="samsung">Samsung</option></a>
+                    <a href="" target="_blank"><option value="lenovo">Lenovo</option></a>
+                </select></li>
+                <li><a href="aboutus.html" >AboutUs</a></li>
+                <li><a href="contactus.html">ContactUs</a></li>
+
+                <li><a href="demostration.html">Demostration</a></li>
+            </ul>
+        </div>
+        
+        <div class="slogan">
+            <h4>e-Zone</h4><br>
+            <p id="click">the good life , at a great price</p>
+            <button onclick="document.getElementById('click').innerHTML='Welocme'" style="margin-left:720px ;">Get Started</button>
+        </div>
+    </section>
+    <section class="brands">
+        <a href=""><img src="apple.png"></a>
+        <a href=""><img src="samsung.png"></a>
+        <a href=""><img src="lenovo.png"></a>
+        <a href=""><img src="nokia.png"></a>
+        <a href=""><img src="huawie.png"></a>
+    </section>
+    <section class="footer">
+        <p>© copyright 2022 jashan</p>
+       <a href="#" class="fa fa-facebook"></a>
+       <a href="#" class="fa fa-instagram"></a>
+       <a href="#" class="fa fa-google"></a> 
+    </section>
+</body>
+</html>

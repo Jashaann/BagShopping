@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=031">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Contact Us</title>
+        <style>
+            body
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .header
+            {
+                background-image: url("backgroundhome.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 400px;
+            }
+            .header h1
+            {
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                padding-top: 150px;
+                font-size: 60;
+            }
+            .header h1::after
+            {
+                content:'';
+                background:red;
+                width:0%;
+                height: 5px;
+                display: block;
+                margin: auto;
+                transition: 0.5s;
+            }
+            .menu
+            {
+                background-color: whitesmoke;
+                opacity: 70%;
+                width: auto;
+                font-size: 15px;
+                text-align: right;
+                margin-top: -273px;
+                text-transform: uppercase;
+            }
+            .menu ul li
+            {
+                font-size: 15px;
+                display: inline-block;
+                padding: 5px;
+            }
+            .menu ul li select
+            {
+                background: transparent;
+                border: none;
+                color: black;
+                font-size: 14px;
+                text-transform: uppercase ;
+            }
+            .menu ul li a
+            {
+                text-decoration: none;
+                color:black;
+            }
+            .menu ul li select:hover
+            {
+                text-decoration:3px underline red;
+            }
+            .menu ul li a:hover
+            {
+                text-decoration:3px underline red;
+            }
+            .textarea
+            {
+                float:right;
+                display: flex;
+            }
+            .header h1:hover::after
+            {
+                width:25%;
+            }
+            .map iframe
+            {
+                text-align: left;
+                height: 300px;
+            }
+            .contact
+            {
+                height: 300px;
+                width: 200px;
+                padding-left:100px;
+                padding-right: 100px;
+                padding-bottom: 10px;
+            }
+            .contact h3
+            {
+                text-align: center;
+                font-size: 30;
+            }
+            .contact p
+            {
+                font-size: 15;
+            }
+            .about
+            {
+                background-color: lightgray;
+            }
+            .about p
+            {
+                text-align: center;
+                font-size: 20;
+                padding-top: 50px;
+            }
+            .about h1
+            {
+                padding-left: 20px;
+                text-align: left;
+            }
+            .about button
+            {
+                padding-left: 20px;
+                text-align: left;
+                background: transparent;
+                margin-left: 20px;
+                border: none;
+                border-radius: 30px;
+                font-size: 20px;
+                background: blueviolet;
+            }
+            .about button:hover
+            {
+                background: skyblue;
+            }
+                .footer
+            {
+                bottom: 0;
+                opacity: 80%;
+                background-color: black;
+                text-align: center;
+                margin-top: 310px;
+            }
+            .fa
+            {
+                padding: 7px;
+                margin-top: 10px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                width: 25px;
+                
+            }
+            .fa:hover
+            {
+                opacity: 0.7;
+            }
+            .fa-facebook
+            {
+                background: blue;
+                color: white;
+                border-radius: 40%;
+            }
+            .fa-instagram
+            {border-radius: 40%;
+                background: red;
+                color: white;
+            }
+            .fa-google
+            {border-radius: 40%;
+                background: white;
+                color: black;
+            }
+            .footer p
+            {
+                color: white;
+                font-size: 20x;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="header">
+            <h1>Contact Us</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="home3.html">Home</a></li>
+                    <li><a href="signup.html" target="_blank">SignUp</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                    <li><select name="brands">
+                        <a href="" target="_blank"><option value="apple">Apple</option></a>
+                        <a href="" target="_blank"><option value="samsung">Samsung</option></a>
+                        <a href="" target="_blank"><option value="lenovo">Lenovo</option></a>
+                    </select></li>
+                    <li><a href="aboutus.html">AboutUs</a></li>
+                    <li><a href="#" >ContactUs</a></li>
+    
+                    <li><a href="demostration.html">Demostration</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="textarea">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.175134961475!2d76.65758911484019!3d30.51608648171319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1658246463083!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact">
+                <h3>Meet Us</h3><br>
+                <p>+123456789</p>
+                <p>ezone</p>
+                <p>Chitkara University,Rajpura</p>
+            </div>
+            <div class="about">
+                <h1>Pitch Us</h1>
+                <p>Hello my name is jashandeep singla and my project is on electronic store </p>
+                <button>Send </button>
+            </div>
+        </section>
+        <section class="footer">
+            <p>© copyright 2022 jashan</p>
+           <a href="#" class="fa fa-facebook"></a>
+           <a href="#" class="fa fa-instagram"></a>
+           <a href="#" class="fa fa-google"></a> 
+        </section>
+    </body>
+</html>

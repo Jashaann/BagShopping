@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=0.1">
+        <title>About Us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .header
+            {
+                background-image: url("backgroundhome.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+                height: 400px;               
+            }
+            .header h1
+            {
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                padding-top: 150px;
+                font-size: 60;
+            }
+            .header h1::after
+            {
+                content:"";
+                background:red;
+                display: block;
+                width: 0;
+                height: 3px;
+                margin: auto;
+                transition: 0.5s;
+            }
+            .header h1:hover::after
+            {
+                width:25%;
+            }
+            .menu
+            {
+                background-color: whitesmoke;
+                opacity: 70%;
+                width: auto;
+                font-size: 15px;
+                text-align: right;
+                margin-top: -273px;
+                text-transform: uppercase;
+            }
+            .menu ul li
+            {
+                font-size: 15px;
+                display: inline-block;
+                padding: 5px;
+            }
+            .menu ul li select
+            {
+                background: transparent;
+                border: none;
+                color: black;
+                font-size: 14px;
+                text-transform: uppercase ;
+            }
+            .menu ul li a
+            {
+                text-decoration: none;
+                color:black;
+            }
+            .menu ul li select:hover
+            {
+                text-decoration:3px underline red;
+            }
+            .menu ul li a:hover
+            {
+                text-decoration:3px underline red;
+            }
+            .textarea img
+            {
+                text-align: right;
+                margin-top: 40px;
+                width: 300px;
+                height: 250px;
+                margin-left: 20px;
+            }
+            .textarea 
+            {
+                float: right;
+                display: flex;
+            }
+            .textarea p
+            {
+                
+                font-family: Segoe Print;
+               margin: 65px 10px 5px 10px;
+                font-size: medium;
+            }
+            .footer
+            {
+                bottom: 0;
+                opacity: 80%;
+                background-color: black;
+                text-align: center;
+                margin-top: 300px;
+            }
+            .fa
+            {
+                padding: 7px;
+                margin-top: 10px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                width: 25px;
+                
+            }
+            .fa:hover
+            {
+                opacity: 0.7;
+            }
+            .fa-facebook
+            {
+                background: blue;
+                color: white;
+                border-radius: 40%;
+            }
+            .fa-instagram
+            {border-radius: 40%;
+                background: red;
+                color: white;
+            }
+            .fa-google
+            {border-radius: 40%;
+                background: white;
+                color: black;
+            }
+            .footer p
+            {
+                color: white;
+                font-size: 20x;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="header">
+            <h1 >About Us</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="home3.html">Home</a></li>
+                    <li><a href="signup.html" target="_blank">SignUp</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                    <li><select name="brands">
+                        <a href="" target="_blank"><option value="apple">Apple</option></a>
+                        <a href="" target="_blank"><option value="samsung">Samsung</option></a>
+                        <a href="" target="_blank"><option value="lenovo">Lenovo</option></a>
+                    </select></li>
+                    <li><a href="#" >AboutUs</a></li>
+                    <li><a href="contactus.html" >ContactUs</a></li>
+    
+                    <li><a href="demostration.html">Demostration</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="textarea">
+            <img id="myimg" src="aboutus.jpg" onclick="changeimg()">
+            <p>As a global leader in consumer electronics, EDRA is well known for manufacturing various products, including televisions, digital cameras, smartphones, and hearables. However, the company is most associated with the widely popular line of home video game consoles under the gaming brand PlayStation.
+			</p>
+			<p>EDRA Corporation
+                At EDRA, our mission is to be a company that inspires and fulfills your curiosity. Using our unlimited passion for technology, content and services to deliver groundbreaking new excitement and entertainment, as only EDRA can.
+            </p>
+        </section>
+        <section class="footer">
+            <p>© copyright 2022 jashan</p>
+           <a href="#" class="fa fa-facebook"></a>
+           <a href="#" class="fa fa-instagram"></a>
+           <a href="#" class="fa fa-google"></a> 
+        </section>
+    </body>
+    <script>
+        function changeimg()
+        {
+            var image = document.getElementById('myimg');
+            if(image.src.match("aboutus2.jpg"))
+            {
+                image.src = "aboutus.jpg";
+            }
+            else
+            {
+                image.src = "aboutus2.jpg";
+            }
+        }
+    </script>
+</html>
